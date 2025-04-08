@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherwood Flooring</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f2ed;
+      color: #333;
+    }
+    header {
+      background-color: #2e4b2c;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('https://tse4.mm.bing.net/th?id=OIP.IO4a0ZGnNu5b2xFLCc4XQAHaEK&pid=Api') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #2e4b2c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Sherwood Flooring Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    Welcome to Sherwood Flooring
+  </div>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Sherwood Flooring brings nature-inspired beauty into your home. With a passion rooted in the essence of Sherwood Forest,
+      we specialize in high-quality flooring installations that blend durability with elegance.
+    </p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Laminate Installation</li>
+      <li>Vinyl Flooring</li>
+      <li>Engineered Hardwood</li>
+      <li>Floor Restoration</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.IO4a0ZGnNu5b2xFLCc4XQAHaEK&pid=Api" alt="Laminate">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.f-9lFbOCGK-7lvnnymRSyQAAAA&pid=Api" alt="Vinyl">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.ZR1tW4sD48Ubg1S_LKy2YgAAAA&pid=Api" alt="Parquet">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.QMqwysQA-JKahWyaa0Y8DwHaFj&pid=Api" alt="Restoration">
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact details coming soon...</p>
+  </footer>
+</body>
+</html>
