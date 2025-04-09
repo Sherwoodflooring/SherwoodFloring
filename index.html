@@ -1,114 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sherwood Flooring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f3f2ed;
-      color: #333;
+      background: #f4f4f4;
     }
     header {
-      background-color: #2e4b2c;
+      background: #2e4d2e;
       color: #fff;
+      text-align: center;
       padding: 20px;
+    }
+    nav {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header img {
-      height: 60px;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .banner {
-      background: url('https://tse4.mm.bing.net/th?id=OIP.IO4a0ZGnNu5b2xFLCc4XQAHaEK&pid=Api') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
       justify-content: center;
+      background: #3a5d3a;
+    }
+    nav button {
+      background: none;
+      border: none;
       color: white;
-      font-size: 32px;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px #000;
+      font-size: 16px;
+      padding: 14px 20px;
+      cursor: pointer;
     }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    nav button:hover {
+      background: #4d7a4d;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+    section {
+      display: none;
+      padding: 20px;
     }
-    .gallery img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
+    section.active {
+      display: block;
+      animation: fadeIn 0.4s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .images img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     footer {
-      background-color: #2e4b2c;
-      color: #fff;
+      background: #2e4d2e;
+      color: white;
       text-align: center;
       padding: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Sherwood Flooring Logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <div class="banner">
-    Welcome to Sherwood Flooring
+<header>
+  <h1>Sherwood Flooring</h1>
+</header>
+
+<nav>
+  <button onclick="showTab('services')">Services</button>
+  <button onclick="showTab('gallery')">Gallery</button>
+  <button onclick="showTab('contact')">Contact</button>
+</nav>
+
+<section id="services" class="active">
+  <h2>Our Services</h2>
+  <p>Professional installation of laminate, hardwood, and vinyl flooring in Vancouver and surrounding areas.</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="images">
+    <img src="floor1.jpg" alt="Project 1">
+    <img src="floor2.jpg" alt="Project 2">
+    <img src="floor3.jpg" alt="Project 3">
+    <img src="floor4.jpg" alt="Project 4">
+    <img src="floor5.jpg" alt="Project 5">
+
   </div>
+</section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      Sherwood Flooring brings nature-inspired beauty into your home. With a passion rooted in the essence of Sherwood Forest,
-      we specialize in high-quality flooring installations that blend durability with elegance.
-    </p>
-  </section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +1 236 865 9939</p>
+  <p><strong>Email:</strong> loxodaserty@gmail.com</p>
+  <p><strong>Location:</strong> Vancouver, BC</p>
+</section>
 
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Laminate Installation</li>
-      <li>Vinyl Flooring</li>
-      <li>Engineered Hardwood</li>
-      <li>Floor Restoration</li>
-    </ul>
-  </section>
+<footer>
+  &copy; 2025 Sherwood Flooring. All rights reserved.
+</footer>
 
-  <section id="gallery" class="section">
-    <h2>Our Work</h2>
-    <div class="gallery">
-      <img src="https://tse4.mm.bing.net/th?id=OIP.IO4a0ZGnNu5b2xFLCc4XQAHaEK&pid=Api" alt="Laminate">
-      <img src="https://tse4.mm.bing.net/th?id=OIP.f-9lFbOCGK-7lvnnymRSyQAAAA&pid=Api" alt="Vinyl">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.ZR1tW4sD48Ubg1S_LKy2YgAAAA&pid=Api" alt="Parquet">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.QMqwysQA-JKahWyaa0Y8DwHaFj&pid=Api" alt="Restoration">
-    </div>
-  </section>
+<script>
+  function showTab(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
 
-  <footer id="contact">
-    <p>Contact details coming soon...</p>
-  </footer>
 </body>
 </html>
